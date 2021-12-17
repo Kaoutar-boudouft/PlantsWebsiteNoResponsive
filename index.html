@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<title>Plants World</title>
+				<link rel="stylesheet" href="style.css">
+				<script src="js.js"></script>
+				<script src="jquery.js"></script>
+				<script>
+				$(document).ready(function(){
+                    $("#showcart").click(function(){
+                        $("#mycart").show(3000)
+                    })
+                    $("#showcart").mouseenter(function(){
+                        $("#continue").show(1000)
+                    })
+                    $("#showcart").mouseleave(function(){
+                        $("#continue").hide(1000)
+                    })
+                });
+				</script>
+</head>
+<body>		
+    <div id="header1" ><h1 class="logo"><img src="images/MicrosoftTeams-image__7_-removebg-preview.png" class="logo1">Rose<sup>Rie</sup></h1>
+        <a href="#contact"><input type="button" value="Login In" id="btn1"></a>
+        <a href="#contact"><input type="button" value="Contact Us" id="btn2"></a><a href="#mycart"><h2 id="showcart">🛒</h2></a><span><div id="number">0</div><div id="prix">0dh</div></span>
+        </div>
+						<div id="space"></div>
+                            <div class="topnav">
+                                <a href="index.html">Home</a>
+                                <a href="#rose">ROSE PLANTS</a>
+                                <a href="#trees">TREES</a>
+                                <a href="#decor">DECOR PLANTS</a>
+                              </div>
+						
+                        <br>
+                        <center>
+                            <div class="container">
+                                <img class='photo'  src="images/x.jpg" alt="Image 1" />
+
+                                <img class="photo"  src="images/xx.jpg" alt="Image 2">
+                                <img class='photo'  src="images/back.jpg" alt="Image 3" />
+
+                              </div>																																																																							
+						<br>
+						<table id="rose">
+									<tr>
+                                                    <td><input type="button" value="<" onclick="next()"></td>																		
+													<td ><div id="1"><img src="rose/1.png" ></div><br><div id="price">199</div><div class="dh">DH</div><input type="button" value="Add to my bascket 🛒" id="bascket" onclick="stock(199,'rose/1.png')"></td>
+													<td ><div id="2"><img src="rose/2.png" ></div><br><div id="price">120</div><div class="dh">DH</div><input type="button" value="Add to my bascket 🛒" id="bascket" onclick="stock(120,'rose/2.png')"></td>
+													<td><div id="3"><img src="rose/3.png" ></div><br><div id="price">99</div><div class="dh">DH</div><input type="button" value="Add to my bascket 🛒" id="bascket" onclick="stock(99,'rose/3.png')"></td>
+													<td><div id="4"><img src="rose/4.png" ></div><br><div id="price">250</div><div class="dh">DH</div><input type="button" value="Add to my bascket 🛒" id="bascket" onclick="stock(250,'rose/4.png')"></td>
+                                                    <td><input type="button" value=">"></td>
+									</tr>									
+						</table>
+                        <br>			
+                        <table id="trees">
+                            <tr>
+                                           <td><input type="button" value="<"></td>																		
+                                            <td><img src="trees/1.png"><br><div id="price">300</div><div class="dh">DH</div><input type="button" value="Add to my bascket 🛒" id="bascket" onclick="stock(300,'trees/1.png')"></td>
+                                            <td><img src="trees/2.png"><br><div id="price">259</div><div class="dh">DH</div><input type="button" value="Add to my bascket 🛒" id="bascket" onclick="stock(259,'trees/2.png')"></td>
+                                            <td><img src="trees/3.png"><br><div id="price">199</div><div class="dh">DH</div><input type="button" value="Add to my bascket 🛒" id="bascket"onclick="stock(199,'trees/3.png')"></td>
+                                            <td><img src="trees/4.png"><br><div id="price">299</div><div class="dh">DH</div><input type="button" value="Add to my bascket 🛒" id="bascket" onclick="stock(299,'trees/4.png')"></td>
+                                            <td><input type="button" value=">"></td>
+                            </tr>									
+                </table>
+                <br>			
+                <table id="decor">
+                    <tr>
+                                   <td><input type="button" value="<"></td>																		
+                                    <td><img src="decore/1.png"><br><div id="price">70</div><div class="dh">DH</div><input type="button" value="Add to my bascket 🛒" id="bascket" onclick="stock(70,'decore/1.png')"></td>
+                                    <td><img src="decore/2.png"><br><div id="price">99</div><div class="dh">DH</div><input type="button" value="Add to my bascket 🛒" id="bascket"onclick="stock(99,'decore/2.png')"></td>
+                                    <td><img src="decore/3.png"><br><div id="price">50</div><div class="dh">DH</div><input type="button" value="Add to my bascket 🛒" id="bascket"onclick="stock(50,'decore/3.png')"></td>
+                                    <td><img src="decore/4.png"><br><div id="price">119</div><div class="dh">DH</div><input type="button" value="Add to my bascket 🛒" id="bascket" onclick="stock(119,'decore/4.png')"></td>
+                                    <td><input type="button" value=">"></td>
+                    </tr>									
+        </table>			
+						<br>	
+						
+						<div id="contact">
+                            <table>
+                                <tr>
+                                    <td><div id="informations">                                        
+                                        <input type="text" placeholder="First Name">
+                                        <br>
+                                        <br>
+                                        <input type="text" placeholder="Last Name">
+                                        <br>
+                                        <br>
+                                        <input type="tel" placeholder="Phone Number">
+                                        <br>
+                                        <br>
+                                        <input type="password" placeholder="Password">
+                                        <br>
+                                        <br>
+                                        <input type="button" value="Sign in" id="btn3">
+                                    </div></td>
+                                    <div id="or"><br>OR<br></div>
+                                </tr>
+                            </table>
+                            <div id="social">
+                                <a href="https://fr-fr.facebook.com/"><img src="images/facebook.png"></a>
+                                <br>
+                                <a href="https://www.google.com/intl/fr/gmail/about/"><img src="images/gmail-removebg-preview-removebg-preview (1).png"></a>
+
+                            </div>
+                        </div>		
+						<div id="mycart" style="display: none;">                         
+						<center></center>
+						</div>
+						<br>
+						<div id="footer">
+<input type="search" placeholder="Search">                            © 2021. All right reserved. Terms & Conditions
+
+                        </div>
+		</center>						
+</body>
+</html>
